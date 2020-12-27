@@ -29,7 +29,8 @@ h1:hover{
     grid-gap:2rem;
 }
 .drum{
-    padding: 2rem 3rem;
+    padding: 3rem 2rem;
+    background-repeat: no-repeat;
     font-size: 4rem;
     font-weight: 700;
     border: 10px solid #14ac6d;
@@ -92,22 +93,29 @@ h1:hover{
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 2rem;
     }
-    .w,.a,.s,.d,.j,.k,.l{
+    .drum{
         background-repeat: no-repeat;
-        width:50%;
+        width:30%;
         margin: 0 auto;
+        height: 20%;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2rem;
+        border: 3px solid #14ac6d;
     }
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     .drum-set{
-        display:flex;
-        flex-direction:column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
     .w,.a,.s,.d,.j,.k,.l{
         background-repeat: no-repeat;
-        width:40%;
+        width:30%;
+        height: 10vh;
         margin: 0 auto;
     }
-}
+} */
+
 
