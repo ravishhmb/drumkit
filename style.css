@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: slategray;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: snow;
+    text-shadow:teal 5px 5px 3px ;
+    font-family: 'Black Ops One', cursive;
+    margin-top: 4rem;
+    text-decoration: underline;
+    transition: all .1s ease-in;
+}
+h1:hover{
+    text-shadow:rgb(253, 9, 9) 5px 5px 3px ;
+    transform: translate3d(2px,2px,3px);
+}
+.drum-set{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-gap:2rem;
+}
+.drum{
+    padding: 2rem 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+    border: 10px solid #14ac6d;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Black Ops One', cursive;
+   
+    transition: all .2s ease;
+}
+.drum:hover{
+    /* transform: translate(3px,2px); */
+    /* transform:skew(5deg,5deg); */
+    transform: translate3d(2px,2px,3px);
+    cursor: pointer;
+}
+.w{
+    background-image: url("images/tom1.png");
+    color: rgb(136, 236, 5);
+}
+.a{
+    background-image: url("images/tom2.png");
+    color: rgb(136, 236, 5);
+}
+.s{
+    background-image: url("images/tom3.png");
+    color: rgb(136, 236, 5);
+}
+.d{
+    background-image: url("images/tom4.png");
+    color: rgb(136, 236, 5);
+}
+.j{
+    background-image: url("images/snare.png");
+    color: rgb(240, 16, 16);
+}
+.k{
+    background-image: url("images/crash.png");
+    color: rgb(240, 16, 16);
+}
+.l{
+    background-image: url("images/kick.png");
+    color: rgb(240, 16, 16);
+}
+
+@media only screen and (max-width: 1200px){
+    .drum-set{
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        grid-row-gap: 2rem;
+    }
+    .w,.a,.s,.d,.j,.k,.l{
+        background-repeat: no-repeat;
+        width:50%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 900px){
+    .drum-set{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+    }
+    .w,.a,.s,.d,.j,.k,.l{
+        background-repeat: no-repeat;
+        width:50%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .drum-set{
+        display:flex;
+        flex-direction:column;
+    }
+    .w,.a,.s,.d,.j,.k,.l{
+        background-repeat: no-repeat;
+        width:40%;
+        margin: 0 auto;
+    }
+}
+
